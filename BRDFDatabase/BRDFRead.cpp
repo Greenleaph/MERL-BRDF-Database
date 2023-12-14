@@ -268,12 +268,10 @@ int main(int argc, char *argv[])
 					double phi_out = l * 2.0 * M_PI / (4*n);
 					double red,green,blue;
 					lookup_brdf_val(brdf, theta_in, phi_in, theta_out, phi_out, red, green, blue);
-					printf("%f %f %f %f %f %f\n",(double) theta_in, (double) phi_in, (double) theta_out, (double) phi_out, (float)red, (float)green, (float)blue);
+					printf("%f %f %f %f %f %f %f\n",(double) theta_in, (double) phi_in, (double) theta_out, (double) phi_out, (float)red, (float)green, (float)blue);
 				}
 			}
 	    }
 	}
 	return 0;
 }
-
-
